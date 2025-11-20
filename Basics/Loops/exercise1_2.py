@@ -3,3 +3,12 @@
 def command():
     num=int(input("enter a number :",))
     return num
+n=int(input("enter average of how many numbers do you want to calculate : ",))
+sum=0
+i=0
+while(i<n):
+    sum+=command()
+    
+    i+=1
+average =sum/n
+print("average  is :",average)
