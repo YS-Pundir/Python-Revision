@@ -1,0 +1,1 @@
+#Finding the product of first n numbers using while loop
