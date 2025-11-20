@@ -1,4 +1,4 @@
-#program to find the sum between twwo numbers
+#program to find the sum between two numbers
 a=int(input("enter first number:",))
 b=int(input("enter second number:",))
 
