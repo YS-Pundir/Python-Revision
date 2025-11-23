@@ -1,4 +1,4 @@
-#opposite right angled triangle
+#opposite,increasing left handed  ,right angled triangle
 n=int(input("enter the number of rows : ",))
 for i in range(n):
     for j in range(i,n):#for  eg : when i is 0, the n 5= total star will be 5
