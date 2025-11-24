@@ -12,6 +12,17 @@ def additon():
         sum+=i
     return sum
 
+#funciton to find average 
+def avr():
+    return additon()/len(list)
+#Finding the largest number of the list
+def large():
+    max=list[0]
+    for i in list :
+        if i >max:
+            max=i
+    return max
+
 
     
     
