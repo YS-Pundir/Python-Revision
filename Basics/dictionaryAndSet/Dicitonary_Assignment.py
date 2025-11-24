@@ -18,4 +18,11 @@ Book_store={
     "Founder":{"Yuvraj Singh Pundir"},
     "Year of establishment":1986
 }
+#printing the whole dictionary
 print(Book_store)
+#printing a specific key
+print("accessing the specific key to print its value",Book_store["inventory"])
+#printing all book categories available 
+print("printing all book categories that are available",list(Book_store["inventory"].keys()))
+#printing price of 1984
+print("the price of 1984 is :",Book_store["inventory"]["fiction"]["1984"]["price"])
