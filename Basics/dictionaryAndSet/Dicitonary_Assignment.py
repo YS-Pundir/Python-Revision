@@ -13,5 +13,9 @@ Book_store={
 
         },
     
-    }
+    },
+    "Employees ":{"Bob","Adolf","Michel","Willium"},
+    "Founder":{"Yuvraj Singh Pundir"},
+    "Year of establishment":1986
 }
+print(Book_store)
