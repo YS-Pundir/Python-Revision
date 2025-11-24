@@ -28,8 +28,11 @@ Students={
         },
     "Contact Details":{"Phone Number":+49177231111,"Address":"Berlin Alxenderplatz"}
 
-    },
+    }
+#Printing the  complete dictionary
 print(Students)
+#printing just the major subjects
+print("the major subjects being studied by a student : ",list(Students["Course"]["Subject"]["Major"].keys()))
 
 
 
