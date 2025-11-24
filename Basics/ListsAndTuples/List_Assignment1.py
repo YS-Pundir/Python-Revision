@@ -31,6 +31,18 @@ def smallest():
     return min
 
 
+def display():
+    print("the addition of every element of the the list : ",additon())
+    print("the average of the element of the list : ",avr())
+    print("the largest number is : ",large())
+    print("the minimum number of the  list is : ",smallest())
+
+display()            
+
     
+           
+
+    
+
     
     
