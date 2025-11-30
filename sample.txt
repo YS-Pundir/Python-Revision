@@ -1,3 +1,4 @@
 hi everyone 
-we aare  learning file o/i 
- using javaI like programing using Java
+we are  learning file o/i 
+using Java
+I like programing using Java
