@@ -5,3 +5,4 @@ file=open('example.txt','r')
 data=file.read()
 #printing the data the was readed 
 print(data)
+print(type(data))
