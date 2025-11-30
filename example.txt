@@ -1,2 +1,6 @@
 hi , i am just practicing the writing mode herenow i am appending file , which write the file without overwrighting the existing material
  so lets do it
+the data that i am writing right now is nothing but appending 
+the data that i am writing right now is nothing but appending 
+the data that i am writing right now is nothing but appending 
+the data that i am writing right now is nothing but appending 
