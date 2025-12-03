@@ -33,7 +33,7 @@ class Manage(BankAccount):
     def ShowBalance(self):
         print(f"the Account has {self.Balance}euros ")
 
-    def key(self):
+    def Menu(self):
         Key=int(input("enter the password of the acount : ",))
         if(Key==self.Password):
             print("A:Withdrwal\nB:Deposite\nC:Change User Name \nD:Check Balance")
@@ -42,19 +42,21 @@ class Manage(BankAccount):
             if(service!="A"and service!="B" and service !="C" and service!="D"):
                 print("<>----Invalid input----<>")
             elif(service=="A"):
-                user.withdrawal()
+                self.withdrawal()
             elif(service=="B"):
-                user.deposite()
+                self.deposite()
             elif(service=="C"):
-                user.New_Holder()
+                self.New_Holder()
             elif(service=="D"):
-                user.ShowBalance()
+                self.ShowBalance()
         else:
             print("Wrong Password")
 
 
 user=Manage("Yuvraj Singh",12345,360000,5200)
-user.key()
+user.Menu()
+
+
 
 
 
