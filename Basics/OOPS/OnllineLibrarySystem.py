@@ -28,6 +28,7 @@ class Library():
             book=Book(Title,Auther,ISBN,False)
             self.listOfBooks.append(book)
             print(f"<><><>The Book {book.Title} has been added successfully <><><>")
+
     def show(self):
         for i in self.listOfBooks:# for every list in nested list , i will be the sublist at every iteration
             print(f"Book : {i[0]} & Auther : {i[1]}")#then for that single iteration , it will  print the first element of that sublist
@@ -46,12 +47,47 @@ class Library():
 
 class member(Library):
     def __init__(self,name):
-        super(self,name)
-        self.member_info={"Yuvraj Singh":"12345","Rohit":"67890","singh":"111213"}
-        Borrowlist=[]
+        super().__init__(name)
+        self.member_info={"Yuvraj Singh":{"id":"12345"},"Rohit":{"id":"67890"},"singh":{"id":"111213"}}
+        self.Borrowlist=[]
         
     def Borrow(self):
+        member_name=input("Please enter the member's name :",)
+        memberFound=False
+        bookfound=False
         
+        for key in self.member_info:
+            if key == member_name :
+                memberFound=True
+                Bookname=input("enter the name of the book to be borrowed : ",)
+                
+                for i in self.listOfBooks:
+                    
+                    if i[0] == Bookname:
+                        
+                        self.Borrowlist.append(Bookname)
+                        self.member_info[member_name]["Book Collection"]=Bookname
+                        print("the book has been Borrowed")
+                        bookfound=True
+                        break
+                break #stop scanning member info once we have handled this member
+        
+        if not memberFound:
+            print(f"Member {member_name} not fund")
+
+        elif not bookfound:
+            print("Book not found")
+
+                      
+                
+                        # for name, info in self.member_info.items():
+                        #     print(f"Name: {name}")
+                        #     for field, value in info.items():
+                        #         print(f"  {field}: {value}")
+                        #         print()  # blank line between members
+             
+               
+               
     
     
 
@@ -60,7 +96,7 @@ class member(Library):
 lib=member("<><><><>------ City Centre Library ------<><><><>")  
 
 
-lib.borrow()
+lib.Borrow()
   
         
         
