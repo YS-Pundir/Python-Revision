@@ -59,7 +59,7 @@ class member(Library):
         for key in self.member_info:
             if key == member_name :
                 memberFound=True
-                Bookname=input("enter the name of the book to be borrowed : ",)
+                Bookname=input("Enter the name of the book to be borrowed : ",)
                 
                 for i in self.listOfBooks:
                     
@@ -67,24 +67,30 @@ class member(Library):
                         
                         self.Borrowlist.append(Bookname)
                         self.member_info[member_name]["Book Collection"]=Bookname
-                        print("the book has been Borrowed")
+                        print(f"The book {Bookname} has been Borrowed")
                         bookfound=True
                         break
                 break #stop scanning member info once we have handled this member
         
         if not memberFound:
-            print(f"Member {member_name} not fund")
+            print(f"Error <!> : Member {member_name} not fund")
 
         elif not bookfound:
-            print("Book not found")
+            print("Error <!> : Book not found")
+        
+        
 
                       
+    def ShowMembers(self):  
+         for name, info in self.member_info.items():
+                            print(f"Name: {name}")
+                            for field, value in info.items():
+                                print(f"  {field}: {value}")
+                                print()  # blank line between members  
+
+    
                 
-                        # for name, info in self.member_info.items():
-                        #     print(f"Name: {name}")
-                        #     for field, value in info.items():
-                        #         print(f"  {field}: {value}")
-                        #         print()  # blank line between members
+                       
              
                
                
@@ -97,6 +103,7 @@ lib=member("<><><><>------ City Centre Library ------<><><><>")
 
 
 lib.Borrow()
+lib.ShowMembers()
   
         
         
