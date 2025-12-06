@@ -34,6 +34,7 @@ class Manage(BankAccount):
         print(f"the Account has {self.Balance}euros ")
 
     def Menu(self):
+        print("Please enter your Sparkasse Card in the machine for our Services")
         Key=int(input("enter the password of the acount : ",))
         if(Key==self.Password):
             print("A:Withdrwal\nB:Deposite\nC:Change User Name \nD:Check Balance")
@@ -51,6 +52,10 @@ class Manage(BankAccount):
                 self.ShowBalance()
         else:
             print("Wrong Password")
+
+        print("please collect your card")
+
+        self.Menu()
 
 
 user=Manage("Yuvraj Singh",12345,360000,5200)

@@ -43,13 +43,24 @@ class Library():
             print("The book has been removed")
         else:
             print("The book , that you want to remove does not exsist in the library")
-            
+
+class member(Library):
+    def __init__(self,name):
+        super(self,name)
+        self.member_info={"Yuvraj Singh":"12345","Rohit":"67890","singh":"111213"}
+        Borrowlist=[]
+        
+    def Borrow(self):
+        
+    
+    
+
         
             
-lib=Library("<><><><>------ City Centre Library ------<><><><>")  
+lib=member("<><><><>------ City Centre Library ------<><><><>")  
 
 
-lib.removeBooks()
+lib.borrow()
   
         
         
