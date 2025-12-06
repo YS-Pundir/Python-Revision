@@ -30,10 +30,36 @@ class Library():
             print(f"<><><>The Book {book.Title} has been added successfully <><><>")
     def show(self):
         for i in self.listOfBooks:# for every list in nested list , i will be the sublist at every iteration
-            print(i[0])#then for that single iteration , it will  print the first element of that sublist
+            print(f"Book : {i[0]} & Auther : {i[1]}")#then for that single iteration , it will  print the first element of that sublist
+    
+    def removeBooks(self):
+        book=input("enter the name of the book that you want to remove from the library --",)
+       
+        for i in self.listOfBooks:
+            if book==i[0]:
+                self.listOfBooks.remove(i)
+                found=True
+        if  found:
+            print("The book has been removed")
+        else:
+            print("The book , that you want to remove does not exsist in the library")
             
-lib=Library("dennf")
-lib.show()
+        
+            
+lib=Library("<><><><>------ City Centre Library ------<><><><>")  
+
+
+lib.removeBooks()
+  
+        
+        
+        
+    
+
+
+            
+
+
 
         
 
