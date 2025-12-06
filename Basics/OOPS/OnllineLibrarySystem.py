@@ -8,38 +8,46 @@ class Book:
 class Library():
     def __init__(self,name):
         self.name=name
-        self.listOfBooks=[]
-
+        self.listOfBooks=[["Death","Sadguru",35713,False],["Samadhi","OSHO",384333,False],["Sambhog","OSHO",283361,False]]
+        
+       
+        
     def addBooks(self):
         maxLim=int(input("Add the maximum limit of book that can be added at once : ",))
+
         print(f"the maximum limit of adding the book is {maxLim}")
         print("---------Add Books---------")
 
         for  i in range(maxLim): 
             print("enter the details of the book that  needed to be added ->")
             
-            Title=input("eneter the name of the book : ",)
+            Title=input("enter the name of the book : ",)
             Auther=input("enter the name of the auther : ",)
             ISBN=input("enter the isbn of the book :",)
 
             book=Book(Title,Auther,ISBN,False)
             self.listOfBooks.append(book)
             print(f"<><><>The Book {book.Title} has been added successfully <><><>")
-
-        n=1
-        print("Books in the libraries are the following -->")
-        for i in self.listOfBooks:
+    def show(self):
+        for i in self.listOfBooks:# for every list in nested list , i will be the sublist at every iteration
+            print(i[0])#then for that single iteration , it will  print the first element of that sublist
             
-            print(f" {n}. {book.Title} by {book.Auther}")
-            n+=1
+lib=Library("dennf")
+lib.show()
+
+        
+
+   
+            
+
+    
 
             
  
         
 
 
-lib=Library("City Library")
-lib.addBooks()
+
 
 
 
