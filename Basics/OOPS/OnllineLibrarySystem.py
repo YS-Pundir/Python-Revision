@@ -14,10 +14,8 @@ class Library():
         
     def addBooks(self):
         maxLim=int(input("Add the maximum limit of book that can be added at once : ",))
-
         print(f"the maximum limit of adding the book is {maxLim}")
         print("---------Add Books---------")
-
         for  i in range(maxLim): 
             print("enter the details of the book that  needed to be added ->")
             
@@ -25,7 +23,6 @@ class Library():
             Auther=input("enter the name of the auther : ",)
             ISBN=input("enter the isbn of the book :",)
 
-            #book=Book(Title,Auther,ISBN,False)
             self.listOfBooks.append([Title,Auther,ISBN,False])
             print(f"<><><>The Book {Title} has been added successfully <><><>")
 
@@ -55,7 +52,6 @@ class member(Library):
         member_name=input("Please enter the member's name :",)
         memberFound=False
         bookfound=False
-        
         for key in self.member_info:
             if key == member_name :
                 memberFound=True
@@ -64,7 +60,6 @@ class member(Library):
                 for i in self.listOfBooks:
                     
                     if i[0] == Bookname:
-                        
                         self.Borrowlist.append(Bookname)
                         self.member_info[member_name]["Book Collection"]=self.Borrowlist
                         print(f"The book {self.Borrowlist} has been Borrowed")
@@ -127,7 +122,7 @@ def main():
      lib=member("<><><><><><>----City Central Library----<><><><><><>")
 
      while True:
-               print("\n" + "="*50)
+               
                print("\n" + "="*50)
                print()
                print("Hezlich willkommen bie Stads Zentrum Bibliothek")
