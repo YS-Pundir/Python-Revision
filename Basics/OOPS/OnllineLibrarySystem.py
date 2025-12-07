@@ -25,9 +25,9 @@ class Library():
             Auther=input("enter the name of the auther : ",)
             ISBN=input("enter the isbn of the book :",)
 
-            book=Book(Title,Auther,ISBN,False)
-            self.listOfBooks.append(book)
-            print(f"<><><>The Book {book.Title} has been added successfully <><><>")
+            #book=Book(Title,Auther,ISBN,False)
+            self.listOfBooks.append([Title,Auther,ISBN,False])
+            print(f"<><><>The Book {Title} has been added successfully <><><>")
 
     def show(self):
         for i in self.listOfBooks:# for every list in nested list , i will be the sublist at every iteration
@@ -35,7 +35,7 @@ class Library():
     
     def removeBooks(self):
         book=input("enter the name of the book that you want to remove from the library --",)
-       
+        found=False
         for i in self.listOfBooks:
             if book==i[0]:
                 self.listOfBooks.remove(i)
@@ -66,8 +66,8 @@ class member(Library):
                     if i[0] == Bookname:
                         
                         self.Borrowlist.append(Bookname)
-                        self.member_info[member_name]["Book Collection"]=Bookname
-                        print(f"The book {Bookname} has been Borrowed")
+                        self.member_info[member_name]["Book Collection"]=self.Borrowlist
+                        print(f"The book {self.Borrowlist} has been Borrowed")
                         bookfound=True
                         break
                 break #stop scanning member info once we have handled this member
@@ -87,23 +87,88 @@ class member(Library):
                             for field, value in info.items():
                                 print(f"  {field}: {value}")
                                 print()  # blank line between members  
-
     
-                
-                       
-             
-               
-               
+    def Return(self):
+         print()
+         membername=input("Enter the Name of the member , Who is Returing the Book ",)
+         Memberfound=False
+         bookfound=False
+         for keys in self.member_info:
+              if membername == keys:
+                   membername=True
+                   bookName=input("Enter the name of the Book to be Returned -->",)
+                   for key ,value in self.member_info.items():
+                        for value ,feild in value.items():
+                             if bookName in self.Borrowlist:
+                                  self.Borrowlist.remove(bookName)
+         if not Memberfound:
+              print("Error : there is no such member ")
+         elif not bookfound:
+              print("Error:the Book has not been borrowed")
     
-    
+    def addMember(self):
+        membername=input("Enter the name person --> ",)
+        memberID=input("Enter the ID of the Perosn-->",)
+        if membername in self.member_info:
+             print(f"Member {membername} alreadyb exsist .")
 
-        
-            
-lib=member("<><><><>------ City Centre Library ------<><><><>")  
+        self.member_info[membername]={"id":memberID}
+
+    def RemoveMember(self):
+         membername=input("Enter the name person --> ",)
+         if membername not in self.member_info:
+              print(f"The person {membername} is not the member of library")
+         self.member_info.pop(membername,None)
+         print(f"The Person {membername} has been removed from the membership successfully ")
+         
+
+       
+def main():
+     lib=member("<><><><><><>----City Central Library----<><><><><><>")
+
+     while True:
+               print("\n" + "="*50)
+               print("\n" + "="*50)
+               print()
+               print("Hezlich willkommen bie Stads Zentrum Bibliothek")
+               print("="*50)
+               print()
+               print("Biite wählen sie ein Option")
+               print(">>>>>>>>>>>>MENU<<<<<<<<<<<<")
+               print("1. Add Books   2. Remove Books\n3.Add Members   4. Remove Members\n5. Borrow Book   6. Return a Book ")
+               print("7. Show Books Available   8. Show Member's Details")
+               print()
+               Choice=int(input("Enter the number of your choice of service-->",))
+ 
+               if Choice==1:
+                    lib.addBooks()
+               elif Choice==2:
+                    lib.removeBooks()
+               elif Choice==3:
+                    lib.addMember()
+               elif Choice==4:
+                    lib.RemoveMember()
+               elif Choice==5:
+                    lib.Borrow()
+               elif Choice==6:
+                    lib.Return()
+               elif Choice==7:
+                    lib.show()
+               elif Choice==8:
+                    lib.ShowMembers()
+     
+     if __name__ == "__main__":
+      main()
 
 
-lib.Borrow()
-lib.ShowMembers()
+main()
+
+
+
+
+
+
+
   
         
         
