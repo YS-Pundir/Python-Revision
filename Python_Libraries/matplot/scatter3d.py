@@ -14,6 +14,7 @@ ax.set_title('3D visulisation')
 ax.set_xlabel('Longitude')
 ax.set_ylabel('Latitude')
 ax.set_zlabel('elevation')
+ax.grid(True)
 
 x=[1,3,2,4,45,56,4,32,66,54,32,2]
 y=[4,5,3,2,5,3,6,4,33,3,2,2]
