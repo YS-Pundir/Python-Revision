@@ -14,12 +14,13 @@ def count_pass_fail(marks,pass_mark=50):
             pass_count+=1
         else:
             fail_count+=1
-    print(f"The Number of students were passed : {pass_count}")
-    print(f"The Number of students were failed : {fail_count}")
+    print(f"Student Passed: {pass_count}")
+    print(f"Student Failed: {fail_count}")
 
 def display_summary(marks):
+    print("Total Students",len(marks))
     average=calculate_average(marks)
-    print(f"The Average Marks of the class is : {average}")
+    print(f"Average Marks: {average}")
     count_pass_fail(marks)
 
 #calling function to dispaly summary
