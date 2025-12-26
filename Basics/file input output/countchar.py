@@ -5,7 +5,7 @@ def user_input():
     line=[]
     print("enter the input (press enter twice to finish): ")
     while True:
-        words=input(" ",)
+        words=input()
         if words=="":
             break
         line.append(words)
