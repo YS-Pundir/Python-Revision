@@ -1,5 +1,5 @@
-,Professors,Subjects,ID,Universities,Experience
-0,Dr. Mira,Computer Architechture,123,Ardon,4
-1,Mr. Shan Faaiz,Mathematics,124,Madarsa,6
-2,Dr Sami ur rehman,Python,125,Punjab University,7
-3,Dr. Chandra Gupta,Phylosophy and Dharma,126,Kurukshetra University,7
+,Professors,Subjects,ID,Universities,Experience,Salary,Address,Working days,Bonus
+0,Dr. Mira,Computer Architechture,123,Ardon,4,40000,Berlin,3,8000.0
+1,Mr. Shan Faaiz,Mathematics,124,Madarsa,6,20000,Potsdam,4,4000.0
+2,Dr Sami ur rehman,Python,125,Punjab University,7,50000,Shimla,2,10000.0
+3,Dr. Chandra Gupta,Phylosophy and Dharma,126,Kurukshetra University,7,80000,Istanbul,5,16000.0
