@@ -1,7 +1,7 @@
-def greeting ():
-    name=input("Please enetr your name : ",)
+name=input("Please enetr your name : ",)
+def greeting (name):
 
     return f"Hello , {name}"
 
 # greeting()
-print(greeting())
+print(greeting(name))
