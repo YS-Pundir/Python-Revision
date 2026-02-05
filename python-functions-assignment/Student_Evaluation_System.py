@@ -12,6 +12,12 @@ def result(list):
     return len(list),sum/len(list)
     
 
+no_of_subjects,average=result(list)
 
-
+def Pass_Fail_checker():
+    if  average >50:
+        return "Pass"
+    else:
+        return "Fail"
+    
 
