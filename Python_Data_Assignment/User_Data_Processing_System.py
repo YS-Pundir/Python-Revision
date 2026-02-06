@@ -24,15 +24,15 @@ user4={
 list_of_users=[user1,user2,user3,user4]
 
 def avg_Score(list):
-    dict={ }
+    
     sum=0
     for i in list :
         for j in i["Score"]:
             sum+=j
-        dict[f"Average Score of {i["Name"]}"]=sum/len(i["Score"])
+        i[f"Average Score"]=sum/len(i["Score"])
 
         
-    return dict
+    return list
 
 def role_checker(role):
     if "Admin" in role:
@@ -40,4 +40,14 @@ def role_checker(role):
     else:
         return False
     
+def main():
+
+    avg_Score(list_of_users)
+
+    for i in list_of_users:
+        
+        print(f"Name of user: {i["Name"]} , Average Score of user: {i["Average Score"]} , Admin role given : {role_checker(i["Role"])}")
+
+if __name__==main():
+    main()
 
