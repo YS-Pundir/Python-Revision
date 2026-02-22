@@ -18,6 +18,10 @@ nmean=np.mean(dataset,axis=0)
 # standard deviation calculation as asked in assignment 
 nstd=np.std(dataset,axis=0)
 
+#Normalizing the dataset
+norm=(dataset-nmean)/nstd
+
+
 
 
 
