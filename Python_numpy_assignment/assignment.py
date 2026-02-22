@@ -29,7 +29,7 @@ def main():
     training_dataset=norm[:ind]
     testing_dataset=norm[ind:]
 
-    #modifing a value in normalized dataset
+    #modifing a value in dataset
 
     training_dataset[0,0]=5
 
