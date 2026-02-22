@@ -21,6 +21,13 @@ nstd=np.std(dataset,axis=0)
 #Normalizing the dataset
 norm=(dataset-nmean)/nstd
 
+# psliting the dataset by 80 percent for training and the rest for testing 
+ind=int(0.8*samples)
+
+training_dataset=norm[:ind]
+testing_dataset=norm[ind:]
+
+
 
 
 
