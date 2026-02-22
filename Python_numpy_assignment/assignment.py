@@ -9,7 +9,11 @@ samples=100
 #features are number of columns
 features=5
 
-dataset=np.random.random(samples,features)
+dataset=np.random.random((samples,features))
+
+# Calculating the mean of features in dataset
+nmean=np.mean(dataset,axis=0)
+# i used axis=0 because it will make compilar to read from up to downside in every column one by one
 
 
 
