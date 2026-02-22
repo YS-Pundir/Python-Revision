@@ -27,6 +27,22 @@ ind=int(0.8*samples)
 training_dataset=norm[:ind]
 testing_dataset=norm[ind:]
 
+print("Normalized dataset ")
+print(norm)
+
+print("training dataset")
+print(training_dataset)
+
+training_dataset[0,0]=5
+
+print(" modified Normalized dataset ")
+print(norm)
+
+print(" modified training dataset")
+print(training_dataset)
+
+
+
 
 
 
