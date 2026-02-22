@@ -35,11 +35,28 @@ print(training_dataset)
 
 training_dataset[0,0]=5
 
-print(" modified Normalized dataset ")
-print(norm)
 
-print(" modified training dataset")
+
+# printing the orignal shape of dataset 
+print("<>"*70)
+
+print("Original Shape of Dataset : ",dataset.shape)
+print("Mean shape:",nmean.shape)
+print("Training data shape:",training_dataset.shape)
+print("Test data shape:",testing_dataset.shape)
+print("-"*20,"Note: Modifying the slice affected the original array","-"*20)
+
+print("<>"*70)
+
+print("-"*20," modified Normalized dataset ","-"*20)
+print()
+print(norm)
+print()
+print()
+print("-"*20," modified training dataset","-"*20)
+print()
 print(training_dataset)
+
 
 
 
