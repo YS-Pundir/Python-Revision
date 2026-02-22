@@ -15,6 +15,9 @@ dataset=np.random.random((samples,features))
 nmean=np.mean(dataset,axis=0)
 # i used axis=0 because it will make compilar to read from up to downside in every column one by one
 
+# standard deviation calculation as asked in assignment 
+nstd=np.std(dataset,axis=0)
+
 
 
 
