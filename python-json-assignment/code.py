@@ -18,3 +18,6 @@ print("Request ID : ",data["id"])
 print("Status : ",data["status"])
 print("Text Result : ",data["result"]["text"])
 print("Confidence Score : ",data["result"]["confidence"])
+
+if data["result"]["confidence"]<0.9:
+    print("Warning !!! :  Your confidnece score is below the minimum amount")
