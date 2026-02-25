@@ -21,3 +21,7 @@ print("Confidence Score : ",data["result"]["confidence"])
 
 if data["result"]["confidence"]<0.9:
     print("Warning !!! :  Your confidnece score is below the minimum amount")
+
+
+with open("respinse.json","w") as f:
+    json.dump(data,f)
