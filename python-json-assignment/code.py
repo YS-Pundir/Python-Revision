@@ -13,4 +13,8 @@ response='''{
 }'''
 
 data=json.loads(response)
-print(data)
+
+print("Request ID : ",data["id"])
+print("Status : ",data["status"])
+print("Text Result : ",data["result"]["text"])
+print("Confidence Score : ",data["result"]["confidence"])
