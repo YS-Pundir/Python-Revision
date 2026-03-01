@@ -9,7 +9,7 @@ data={
 df=pd.DataFrame(data)
 print("Orignal Dataset : ")
 print(df)
-print("-"*50)
+print("-"*60)
 
 
 print("The names of the students , Attempted the examination : ")
