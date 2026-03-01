@@ -30,7 +30,7 @@ df.index=[1001,1002,1003,1004,1005,1006,1007,1008]
 print("Printing name of the student by  id of student :-")
 print(df.loc[1004,"Name"])
 print("Printing the First three rows of Datasetv with updated index : " )
-print(df.loc[1001:1005])
+print(df.loc[1001:1003])
 
 print("-"*60)
 print("Students with Score greater then 85 :-")
