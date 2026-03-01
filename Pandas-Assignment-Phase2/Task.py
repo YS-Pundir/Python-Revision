@@ -20,3 +20,7 @@ print("-"*60)
 print("A Small summary of dataset : ")
 print()
 print(df[["Name","Passed","Category"]])
+
+print("-"*60)
+print("First Three column of the dataset : ")
+print(df.iloc[0:3])
