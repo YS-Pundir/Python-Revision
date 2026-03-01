@@ -37,3 +37,8 @@ print("Students with Score greater then 85 :-")
 print(df[df["Score"]>85])
 print("Students with Score greater then 85 and Passed as result :-")
 print(df[(df["Score"]>85)&(df["Passed"] == True)])
+
+print("-"*60)
+print("Soritng the filtered Dataset : ")
+df2=df[df["Score"]>85]
+print(df2.sort_values("Score",ascending=False))
