@@ -2,7 +2,7 @@ import pandas as pd
 
 data={
     "Name":["Yuvraj Singh","Prashant Kumar","Rohit Sharma","Amit Thakur","Akshay Rana","Himanshu Choudhry","Abhishek Pundir","Udit Narayan"],
-    "Score":[99,77,48,73,59,82,47,66],
+    "Score":[99,87,48,73,89,82,47,66],
     "Passed":[True,False,False,True,False,True,True,True],
     "Category":["a","d","d","a","d","c","b","a"]
 }
@@ -31,3 +31,9 @@ print("Printing name of the student by  id of student :-")
 print(df.loc[1004,"Name"])
 print("Printing the First three rows of Datasetv with updated index : " )
 print(df.loc[1001:1005])
+
+print("-"*60)
+print("Students with Score greater then 85 :-")
+print(df[df["Score"]>85])
+print("Students with Score greater then 85 and Passed as result :-")
+print(df[(df["Score"]>85)&(df["Passed"] == True)])
