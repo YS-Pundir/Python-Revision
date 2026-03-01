@@ -42,3 +42,8 @@ print("-"*60)
 print("Soritng the filtered Dataset : ")
 df2=df[df["Score"]>85]
 print(df2.sort_values("Score",ascending=False))
+
+print("-"*60)
+print("Result of chaining of soritng and filtering operation : ")
+df3=df[df["Score"]>80].sort_values("Score",ascending=True)
+print(df3)
