@@ -7,3 +7,8 @@ data={
     "Category":["a","d","d","a","d","c","b","a"]
 }
 df=pd.DataFrame(data)
+
+
+print("The names of the students , Attempted the examination : ")
+print()
+print(df["Name"])
