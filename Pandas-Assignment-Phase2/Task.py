@@ -7,8 +7,16 @@ data={
     "Category":["a","d","d","a","d","c","b","a"]
 }
 df=pd.DataFrame(data)
+print("Orignal Dataset : ")
+print(df)
+print("-"*50)
 
 
 print("The names of the students , Attempted the examination : ")
 print()
 print(df["Name"])
+
+print("-"*60)
+print("A Small summary of dataset : ")
+print()
+print(df[["Name","Passed","Category"]])
