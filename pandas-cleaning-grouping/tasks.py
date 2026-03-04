@@ -26,7 +26,7 @@ data = {
 }
 
 df = pd.DataFrame(data)
-
+print("Orignal DataFrame : ")
 print(df)
 
 print("-"*60)
@@ -42,7 +42,7 @@ print(df)
 
 print("-"*60)
 df.drop(columns=["Temporary_Notes"],inplace=True)
-print("Dataframe after deleting the templraray file column from df")
+print("Dataframe after deleting the temprary file column from df : ")
 print(df)
 
 print("-"*60)
@@ -52,3 +52,13 @@ df.rename(columns={
 },inplace=True)
 print("DataFrame after changing names of columns : ")
 print(df)
+
+print("-"*60)
+summary=df.groupby("Department").agg({
+    "Anuall_Salary":"mean",
+    "Employee_Name":"count"
+
+})
+
+print("Summary DataFrame : ")
+print(summary)
