@@ -28,3 +28,8 @@ data = {
 df = pd.DataFrame(data)
 
 print(df)
+
+print("-"*60)
+missing_values=df.isnull().sum()
+print("The summary of missing values in dataframe is something like that : ")
+print(missing_values)
