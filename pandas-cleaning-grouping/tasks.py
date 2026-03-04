@@ -33,3 +33,9 @@ print("-"*60)
 missing_values=df.isnull().sum()
 print("The summary of missing values in dataframe is something like that : ")
 print(missing_values)
+
+
+print("-"*60)
+df["Salary"]=df["Salary"].fillna(df["Salary"].mean())
+print("The dataframe After filling the misssing values : ")
+print(df)
