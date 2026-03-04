@@ -39,3 +39,16 @@ print("-"*60)
 df["Salary"]=df["Salary"].fillna(df["Salary"].mean())
 print("The dataframe After filling the misssing values : ")
 print(df)
+
+print("-"*60)
+df.drop(columns=["Temporary_Notes"],inplace=True)
+print("Dataframe after deleting the templraray file column from df")
+print(df)
+
+print("-"*60)
+df.rename(columns={
+    "Salary":"Anuall_Salary",
+    "Employee":"Employee_Name"
+},inplace=True)
+print("DataFrame after changing names of columns : ")
+print(df)
