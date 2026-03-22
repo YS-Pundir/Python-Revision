@@ -30,7 +30,7 @@ fig=px.histogram(
 )
 
 fig.show()
-    # Observation : The Dataset is highly dense bitween 1.3 and 1.7 values on pental length , and zero bitween 2.2 and 2.8
+    # Observation : The Dataset is highly dense between 1.3 and 1.7 values on pental length , and zero between 2.2 and 2.8
 
 # Step 4 : Identifing the Possible Outliers in dataset using the box Chart
 fig=px.box(
@@ -41,3 +41,15 @@ fig=px.box(
 fig.show()
     # Observation : The Dataset has no outliers for sepal_length,petal_length
 
+# Step 5 : Analysing the relation between variable using the correlation heatmap
+crr=data[["petal_length","petal_width"]].corr(numeric_only=True)
+print(crr)
+
+fig=px.imshow(
+    crr,
+    title="Corelation bitween petal length and petal width"
+)
+fig.show()
+    #Observation : both of these varibale are directcly propoitonal to each other at the rate of 0.96(approx) . 
+
+# Conclusional Insight : The high correlation (0.96) between petal length and petal width indicates that these two features are nearly redundant, making them the most reliable "fingerprints" for distinguishing between species.
