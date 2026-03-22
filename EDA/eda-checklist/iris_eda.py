@@ -28,7 +28,7 @@ fig=px.histogram(
     x="petal_length",
     title="Distribution of Pental Length "
 )
-
+fig.write_image("Distribution_Chart.png")
 fig.show()
     # Observation : The Dataset is highly dense between 1.3 and 1.7 values on pental length , and zero between 2.2 and 2.8
 
@@ -38,6 +38,7 @@ fig=px.box(
     y=["sepal_length","petal_length"],
     title="Idnetifing the Possible outliers"
 )
+fig.write_image("Outliers_Identification.png")
 fig.show()
     # Observation : The Dataset has no outliers for sepal_length,petal_length
 
@@ -49,6 +50,7 @@ fig=px.imshow(
     crr,
     title="Corelation bitween petal length and petal width"
 )
+fig.write_image("Corelation_Heatmap.png")
 fig.show()
     #Observation : both of these varibale are directcly propoitonal to each other at the rate of 0.96(approx) . 
 
