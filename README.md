@@ -1,79 +1,47 @@
-# 🐍 Python Revision 2025
+# 🚀 AI Engineering & Data Science Foundations
 
-This repository contains my complete Python revision as I prepare for Machine Learning, backend development, and Agentic AI systems.  
-All topics are structured, organized, and uploaded step-by-step to track my actual learning progress.
-
----
-
-## 📘 Contents
-
-### **1. Basics**
-- Variables, data types  ,String
-- Conditionals  
-- Loops   
-- Functions
-- OOPS
-
-### **2. Data Structures**
-- Lists  
-- Tuples  
-- Sets  
-- Dictionaries  
-- Comprehensions  
-
-### **3. Intermediate Python**
-- Modules & packages  
-- Exceptions  
-- Iterators & generators  
-- Decorators (basic)  
-- Lambda, map, filter, reduce  
-
-### **4. Data Skills**
-- NumPy  
-- Pandas  
-- Matplotlib  
-- CSV/JSON handling  
-
-### **5. Engineering Python**
-- Logging  
-- File handling  
-- JSON processing  
-- API requests  
-- Project structure (`src/`, `utils/`)  
-- Virtual environments  
-
-### **6. Mini Projects**
-- CSV Cleaner  
-- JSON Automation Tool  
-- API Data Fetcher  
-- Task Tracker (logging-based)  
-- Utilities Library  
+This repository serves as a professional-grade foundation for my journey into **Machine Learning, Agentic AI, and Backend Development**. It documents the mastery of Python engineering, data manipulation, and exploratory analysis.
 
 ---
 
-## 🎯 Goal
-
-To build a clean, strong Python foundation that prepares me for:
-
-- Machine Learning  
-- Cloud & backend development  
-- Agentic AI systems  
-- Data engineering basics  
-- Real-world automation tasks  
-
-This repository is a reflection of my **honest journey** from fundamentals to advanced concepts.
+## 🛠️ Tech Stack & Tools
+* **Languages:** Python 3.x, SQL (SQLite)
+* **Data Science:** NumPy, Pandas, Matplotlib, Plotly
+* **Engineering:** Git/GitHub, CLI, Virtual Environments (.venv), API Integration (Requests/JSON)
+* **Environment:** VS Code, Jupyter Notebooks, Google Colab
 
 ---
 
-## 🚀 Tools Used
+## 📑 Curriculum & Milestones
 
-- Python 3.x  
-- Jupyter Notebook  
-- VS Code  
-- NumPy, pandas, matplotlib  
+### 1. Python Engineering & Logic
+* **Fundamentals:** Data types, Flow control, and Notebook discipline.
+* **Advanced Logic:** Functions, OOPS, Iterators, Generators, and Decorators.
+* **Engineering:** Logging, File handling (CSV/JSON), and modular project structures (`src/`, `utils/`).
+
+### 2. The Data Stack
+* **Numerical Computing:** Efficient array operations with **NumPy**.
+* **Data Manipulation:** Advanced **Pandas** (Indexing, Joins, GroupBy, handling missing values).
+* **Database Querying:** SQL basics integrated with Pandas workflows.
+* **Storytelling:** Exploratory Data Analysis (EDA) using Matplotlib and Plotly.
+
+### 3. API & Web Integration
+* **Ingestion:** Fetching real-world data via REST APIs.
+* **Processing:** JSON parsing and data cleaning pipelines.
+* **Deployment:** (Optional) UI prototyping with Streamlit.
 
 ---
 
-## 📌 Status
+## 🏗️ Featured Mini-Projects
+* **EDA Snack App:** An end-to-end pipeline: Ingest → Clean → Visualize.
+* **API Data Fetcher:** Automated tool for retrieving and storing JSON data.
+* **CSV Cleaner:** A utility script for standardizing messy datasets.
+* **Task Tracker:** A logging-based application to demonstrate engineering best practices.
 
-I update this repository regularly as I revise and learn new topics.
+---
+
+## 📈 My Learning Mental Model
+I follow an **"Ingest → Clean → Explore → Model"** workflow. This repository focuses on the first three pillars, ensuring high-quality data is ready for the ML/Agentic AI layer.
+
+---
+**Status:** 🏗️ Phase 1 (Foundations) Complete. Moving towards ML & Agentic AI.
