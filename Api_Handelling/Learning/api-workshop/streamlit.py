@@ -54,3 +54,7 @@ st.subheader("Filter by user")
 user=st.selectbox("Select User",df["user_id"].unique())
 user_df=df[df["user_id"]==user]
 st.write(user_df)
+
+st.subheader("Postr Leangth Distribution")
+fig=px.histogram(df,x="Post_Length")
+st.plotly_chart(fig)
